@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html_css02_selectors.html</title>
+    <style>
+        /*
+            태그로 선택하는 방법
+            태그명 {CSS속성}
+        */
+        p{background-color: #ff0000;}
+
+
+        /*id로 선택하는 방법*/
+        #id_selector{background-color: orange;}
+
+
+        /*
+            class로 선택하는 방법
+            .클래스명{CSS속성}
+        */
+        .class_selector{background-color: yellow;}
+        .f_color{color:tomato}
+
+
+        /*
+            전체를 선택하는 방법
+            *{CSS속성}
+        */
+        *{margin: 0; padding: 0;}
+
+
+        /*
+            관계를 이용한 선택방법
+            자식 선택자
+            section의 자식인 ul에게 효과를 적용하자
+        */
+        section>ul{background-color : green;}
+
+        /*자손 선택자*/
+        /*section의 자손인 li에게 효과를 적용하자*/
+        section li{color:hotpink}
+
+        /*    결합 선택자 */
+        /* div 이면서 클래스가 bg_black 인 아이를 선택 */
+        div.bg_black{background-color: black;}
+
+        /*    속성 선택자 */
+        a[href="https://www.naver.com"]{color:green}
+
+
+    </style>
+</head>
+<body>
+    <h1>css 선택자</h1>
+    css가 어떤 요소를 선택할 것인지 판단하기 위한 방식<br>
+    <p>태그로 선택하는 방법</p>
+    <p>태그로 선택하는 방법</p>
+    <div id="id_selector">id로 지정하는 방법</div> <!-- 유일하게 하나만할때 id -->
+    <div class="class_selector">클래스로 지정하는 방법</div> <!-- 여러개를 할때 중첩해서도 할수 있다.-->
+    <div class="class_selector f_color">지정한 클래스로 하는 방법</div> <!-- 여러개를 할때 -->    
+    <br>
+    <hr>
+    <br>
+    <section>
+        <div>
+            <ul>
+                <li> section>div>ul>li</li>
+            </ul>
+        </div>
+        <ul>
+            <li>section>ul>li</li>
+        </ul>
+    </section>
+    <br>
+    <br>
+    <ol>
+        <li>ol>li</li>
+    </ol>
+    <hr>
+    <br>
+    <br>
+    <div class="bg_black">class=bg_black인 div</div>
+    <section class="bg_black">class=bg_black인 section</section>
+    <hr>
+    <br>
+    <br>
+    <a href="https://www.naver.com">네이버</a>
+    <a href="https://www.daum.net">다음</a>
+</body>
+</html>

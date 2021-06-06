@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html_tag10_tables.html</title>
+</head>
+<body>
+    <!-- 
+         tr : row를 뜻함 , 내용을 직접넣지 않고, th나 td를 넣어사용함
+         th : 가운데 정렬, 두꺼운 글씨
+         td : 왼쪽 정렬
+     -->
+    <h1>테이블 : 표</h1>
+    <table border="1">
+        <caption>테이블 캡션</caption>
+        <tr>
+            <thead> <!-- thead 는 밑에있어도 결과는 항상 맨위에 출력된다. -->
+                <tr>
+                    <th>번호</th>
+                    <th>이름</th>
+                    <th>나이</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1번</td>
+                    <td>짱구</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>2번</td>
+                    <td>홍길동</td>
+                    <td rowspan="2">90</td>
+                    <!-- 2개 만큼 위아래로 공간을 넓히겠다. -->
+                </tr>
+                <tr>
+                    <td>3번</td>
+                    <td>아인슈타인</td>
+                    
+                </tr>
+            </tbody>
+            <tfoot> <!-- 항상 바닥에 놓인다. -->
+                <tr>
+                    <td colspan="3">주소주소</td>
+                    <!-- 3개 만큼 좌우로 공간을 넓히겠다. -->
+                </tr>
+            </tfoot>
+        </tr>
+    </table>
+
+    <table border="1" > 
+           <tr>
+               <tbody>
+                   <tr>
+                       <td rowspan="4"><img src="../images/hi.png" alt="하이" width="50" height="200"></td>
+                    
+                       <td colspan="4">이 력 서</td>
+                   </tr>
+                   <tr>
+                       <td rowspan="2">성명</td>
+                       <td rowspan="2">&nbsp;</td>
+                       <td colspan="2">주 민 등 록 번 호</td>
+                   </tr>
+                   <tr>
+                       <td colspan="2">&nbsp;</td>
+                   </tr>
+                   <tr>
+                       <td colspan="4">생년월일 19 년 월 일생 (만 세)</td>
+                   </tr>
+                   <tr>
+                       <td>주 소</td>
+                       <td colspan="4">&nbsp;</td>
+                   </tr>
+                   <tr>
+                       <td rowspan="2">연락처</td>
+                       <td>집</td>
+                       <td></td>
+                       <td rowspan="2">전자우편</td>
+                       <td rowspan="2">&nbsp;</td>
+                   </tr>
+                   <tr>
+                       <td>핸드폰</td>
+                       <td></td>
+                   </tr>
+               </tbody>
+           </tr> 
+
+
+    </table>
+</body>
+</html>

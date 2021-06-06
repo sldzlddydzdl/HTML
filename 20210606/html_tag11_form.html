@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html_tag11_form.html</title>
+</head>
+<body>
+    <h1>폼!!</h1>
+    <!-- 
+        클라이언트에게 데이타를 입력받을 수 있는 화면 
+        클라이언트에게 받은 데이터를 서버로 보내기 위한 아이 
+        form 태그 자식으로 input을 사용한다.
+     -->
+     <!-- 
+         action : 데이터를 보낼 주소
+         method : http 프로토콜의 방식(get,post)
+                get - url에 표시되는 방식
+                post - url에 표시되지 않는 방식
+
+        input 태그의 속성
+        type : 입력방식
+        placeholder : 설명(미리보기)
+        name : 전달할 값의 키 변수의 역활을한다.
+        value : 전달할 값
+      -->
+     <form action="index.html" method="GET">
+        <input type="text" placeholder="회원아이디" name="userId" ><br>
+        <input type="password" placeholder="비밀번호" name="password"><br>
+        <fieldset>
+            <!-- 
+                radio 하나만 선택하도록 하는 아이, name 이 같아야 한다! 
+                value를 넣어줘야만 어떤 값이 선택됐는지 판단이 가능하다.
+
+                label 태그로 감싸져 있으면 글자를 선택해도 버튼이 동작한다.
+            -->
+            <legend>학년</legend>
+               
+            <label><input type="radio" name="grade" value="1" checked>1학년</label>
+            <label><input type="radio" name="grade" value="2">2학년</label>
+            <label><input type="radio" name="grade" value="3">3학년</label>
+            <label><input type="radio" name="grade" value="4">4학년</label>
+            <!-- checked 맨처음에 선택되도록 해주는 기능 -->
+        </fieldset>    
+        <fieldset> <!-- 다중 선택 -->
+            <legend>취미</legend>
+            <input type="checkbox" name="hobby" value="game" id="id_game" checked><label for="id_game">게임</label>
+            <input type="checkbox" name="hobby" value="reading" id="id_reading"><label for="id_reading">독서</label>
+            <input type="checkbox" name="hobby" value="study" id="id_study"><label for="id_study">공부</label>
+        </fieldset>
+        <fieldset>
+            <legend>비밀번호 찾기 힌트</legend>
+            <select name="passwordHint">
+                <option value="hint1">가장 감명깊게 읽은 책은?</option>
+                <option value="hint2">어린시절 별명은 누가 지어줬는가?</option>
+                <option value="hint3" selected>초등학교 2학년때 앉았던 자리의 번호는?</option>
+                <!-- selected 기본값으로 선택 얼래는 맨위에께 기본값인데 기본값 바꾸기 -->
+            </select>
+            <input type="text" name="passwordAns" placeholder="답">
+        </fieldset>
+        생년월일 : <input type="date" name="birthDate" min="1990-01-01" max="2021-06-06"><br>
+        프로필 사진 : <input type="file" name="uploadFile" multiple><br>
+        <input type="submit" value="회원가입하기"> <!-- action에 있는 주소로 데이타를 보낸다. -->
+        <input type="reset" value="초기화"> <!-- 같은 폼 안쪽의 input 의 값을 지워줌 -->
+        
+</body>
+</html>
