@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>thead, tbody, tfoot</title>
+<style>
+table{	
+/*border-collapse:table과 td,th의 보더 정리*/
+	/* border-collapse:collapse; */
+	width:500px;
+	height:300px;
+	border-width: 2px;
+	border-color: black;
+	border-style: double;  
+}
+td,th{
+	border-width: 2px;
+	border-color: black;
+	border-style: solid;  
+}
+/* #change{
+	font-size: 40px;
+}
+.yellow td{
+	background-color: yellow;
+}
+.green{
+	background-color: greenyellow;
+}
+.blue{
+	background-color: blue;
+} */
+.head{
+	display: none;
+}
+thead{
+	background-color: pink;
+}
+tbody{
+	background-color: green;
+}
+tfoot{
+	background-color: yellow;
+}
+
+</style>
+</head>
+
+<body>
+<h1 class="head">최강 음원 다운로드표</h1>
+<figure>
+	<figcaption id="change">최강 음원 다운로드표</figcaption>
+	<table>
+		<thead>
+			<tr class="green">
+				<th>곡명</th>
+				<th>가수</th>
+				<th>다운로드</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr class="yellow">
+				<td>나와 같다면</td>
+				<td>김연유</td>
+				<td>5,896</td>
+			</tr>
+			<tr class="yellow">
+				<td>여러분</td>
+				<td>임재범</td>
+				<td>7,895</td>
+			</tr>
+			<tr class="yellow">
+				<td>편지</td>
+				<td>BMK</td>
+				<td>6,032</td>
+			</tr>
+		</tbody>
+
+		<tfoot>
+			<tr class="blue">
+				<th colspan="2">다운로드 합계</th>
+				<td>25,221</td>
+			</tr>
+		</tfoot>
+	</table>
+</figure>
+<!--
+최강 음원 다운로드 (단위:백만)
+곡명	가수	다운로드
+나와 같다면	김연우	5,896
+여러분	임재범	7,895
+편지	BMK	6,032
+늪	김범수	5,398
+다운로드 합계	25,221
+-->
+</body>
+</html>

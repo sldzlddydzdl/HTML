@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>table_basic</title>
+<style>
+table{	
+/*border-collapse:table과 td,th의 보더 정리*/
+	border-collapse:collapse;
+	width:500px;
+	height:300px;
+	border-width: 1px;
+	border-color: black;
+	border-style: solid;  
+}
+td,th{
+	border-width: 1px;
+	border-color: black;
+	border-style: solid;  
+}
+/* .yellow{
+	background-color: yellow;
+	color: red;
+}
+.red{
+	background-color: red;
+} */
+</style>
+
+</head>
+<body>
+<figure>
+	<figcaption>기본표</figcaption>
+<!-- table -->
+	<table>
+		<tr>
+			<th>제목1</th>
+			<th>제목2</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+		</tr>
+	</table>
+</figure>
+
+<figure>
+	<figcaption>웹브라우저 점유율</figcaption>
+	<table>
+		<tr>
+			<th class="yellow">웹브라우저</th>
+			<th class="yellow">점유율</th>
+		</tr>
+		<tr>
+			<td class="red">익스폴로러</td>
+			<td class="red">38.79%</td>
+		</tr>
+		<tr>
+			<td class="red">파이어폭스</td>
+			<td class="red">30.13%</td>
+		</tr>
+		<tr>
+			<td class="red">크롬</td>
+			<td class="red">21.45%</td>
+		</tr>
+		<tr>
+			<td class="red">그외</td>
+			<td class="red">9.63%</td>
+		</tr>
+		<tr>
+			<th class="yellow">합계</th>
+			<td class="red">100%</td>
+		</tr>
+	</table>
+</figure>
+
+
+
+<!--
+웹브라우저	점유율
+웹브라우저	점유율
+익스플로러	38.79%
+파이어폭스	30.13%
+크롬	21.45%
+그외	9.63%
+합계	100%-->
+</body>
+</html>
