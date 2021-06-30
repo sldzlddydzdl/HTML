@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title>input 요소</title>
+	<style>
+		section {
+			width: 800px;
+			margin: 0 auto;
+		}
+
+		section>h1 {
+			text-align: center;
+			margin-bottom: 20px
+		}
+
+		fieldset {
+			margin-bottom: 25px;
+		}
+
+		legend {
+			color: #09F;
+			font-size: 1.5em;
+			font-weight: 900;
+		}
+	</style>
+</head>
+
+<body>
+	<section>
+		<h1>새로운 input Type </h1>
+		<form action="#" >
+			<fieldset>
+				<legend>Text 변형</legend>
+				<!-- text -->
+				<p>
+					<label for="userID">아이디</label>
+					<input type="text" id="userID" maxlength="12">
+					<span>12자 이내로 해 주세요</span>
+				</p>
+				<p>
+					<label for="userPw">패스워드</label>
+					<input type="password" id="userPw" minlength="6">
+					<span>최소 6글자 이내로 해 주세요.</span>
+				</p>
+				<!--search-->
+				<p>
+					<label for="userSearch">검색</label>
+					<input type="search" id="userSearch">
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>개인정보</legend>
+				<!--tel-->
+				<p>
+					<label for="userTel"> 전화번호1</label>
+					<input type="tel" id="userTel" placeholder="숫자만 입력">
+				</p>
+				<!--tel 2-->
+				<p>
+					<label for="userTel2">전화번호2</label>
+					<input type="tel" id="userTel2" value="01022223333" readonly>
+				</p>
+				<!--url-->
+				<p>
+					<label for="userUrl"> 웹사이트주소</label>
+					<input type="url" id="userUrl" placeholder="http://도메인주소">
+				</p>
+				<!--url:2-->
+				<p>
+					<label for="userUrl2">웹사이트주소2</label>
+					<input type="url" id="userUrl2" value="http://www.naver.com" readonly>
+				</p>
+				<!--email-->
+				<p>
+					<label for="userEmail"> 이메일</label>
+					<input type="email" id="userEmail" placeholder="aaa@naver.com">	
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>날짜</legend>
+				<!--date-->
+				<p>
+					<label for="userDate">예약가능일</label>
+					<!-- 올해 7월 15일  내년 7월 14일 20일 셋팅  -->
+					<input type="date" id="userDate" value="2021-07-20" min="2021-07-15" max="2022-07-14">
+				
+				</p>
+				<!--month-->
+				<p>
+					<label for="userMonth">예약 가능달</label>
+					<input type="month" id="userMonth" value="2021-08" min="2021-07" max="2022-07"> 
+				</p>
+				<!--week-->
+				<p>
+					<label for="userWeek">예약가능주</label>
+					<input type= "week" id="userWeek" value="2021-W25" min="2021-W15" max="2021-W40">
+				</p>
+				<!--time-->
+				<p>
+					<label for="userTIme">예약 가능시간</label>
+					<input type="time" id="userTime" value="20:00" min="03:00" max="21:00" > 
+						<!-- 아직 덜배워서 작동이잘안된다. -->
+				</p>
+
+				<!--datetime-local-->
+				<p>
+					<label for="userLocal">지역시간대</label>
+					<input type="datetime-local" id="userLocal">
+				</p>
+			</fieldset>
+
+			<fieldset>
+				<legend>숫자</legend>
+				<!--number-->
+				<p>
+					<label for="userAge">연령</label>
+					<input type="number" id="userAge" min="0" max="100" value="20" step="10">
+					<!-- min max value step 값이 논리성있게 잘맞아야 한다  -->
+				</p>
+				<!--range-->
+				<p>
+					<label for="userRange">만족도</label>
+					<input type="range" id="userRange" min="0" max="100" value="30" step="10">
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>선택하기</legend>
+				<!-- radio -->
+				<p>
+					<span>성별</span>	
+					<label><input type="radio" name="num" checked>남</label>
+					<label><input type="radio" name="num">여</label>	
+				</p>
+				<!-- checkbox -->
+				<p>
+					<span>취미</span>
+					<label><input type="checkbox">축구</label>
+					<label><input type="checkbox" checked>야구</label>
+					<label><input type="checkbox">수영</label>
+				</p>
+			</fieldset>
+
+			<fieldset>
+				<legend>기타</legend>
+				<!--color-->
+				<p>
+					<label for="userColor">선택칼라</label>
+					<input type="color" id="userColor" value="#FFCC00">
+				</p>
+				<!-- 업로드 -->
+				<p>
+					<label for="userPhoto">사진업로드</label>
+					<input type="file" id="userPhoto">
+				</p>
+				<!-- hidden -->
+				<p>
+					<label for="userHidden">기본설정</label>
+					<input type="hidden" id="userHidden" value="기본회원">
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>속성사용하기</legend>
+
+			</fieldset>
+			<fieldset>
+				<legend>버튼</legend>
+				<!-- 전송 취소 버튼 -->
+				<p>
+					<input type="submit" value="전송">
+					<input type="reset" value="취소">
+				</p>
+				<!-- 기타버튼 -->
+				<p>
+					<input type="button" value="일반버튼">
+					<input type="image" src="img/button.gif" alt="버튼이름">
+				</p>
+			</fieldset>
+		</form>
+	</section>
+</body>ß
+
+</html>
