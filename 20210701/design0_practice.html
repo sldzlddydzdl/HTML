@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .left{
+            margin-left: 45px;
+        }
+        #userIntro{
+            width:400px;
+            height:100px;
+        }
+        #userEmail{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="POST">
+        <h1>회원가입</h1>
+        <fieldset>
+            <legend>회원가입양식</legend>
+            <p>
+                <label for="userId">아이디</label><br>
+                <input type="text" id="userId"  maxlength="12" class="left">&nbsp;(아이디는 12자 이내로 입력해주세요)
+                <input type="button" value="아이디중복확인">
+            </p>
+            <p>
+                <label for="userPw">비밀번호</label><br>
+                <input type="password" id="userPw" class="left">
+            </p>
+            <p>
+                <label for="userIntro">자기소개</label><br>
+                <textarea name="userIntro" id="userIntro" cols="30" rows="10" class="left"></textarea>
+            </p>
+            <p>
+                <span>성별</span><br>
+                <input type="radio" name="Gen" style="margin-left: 45px;" checked>남
+                <input type="radio" name="Gen">여
+            </p>
+            <p>
+                <label for="userEmail">이메일주소</label><br>
+                <input type="email" id="userEmail" placeholder="aaaa@naver.com 형식으로 입력해주세요" class="left">
+            </p>
+            <p>
+                <label for="emailAccept">이메일수신허용</label><br>
+                <input type="radio" name="Accept" class="left" checked>허용
+                <input type="radio" name="Accept">거부
+            </p>
+            <p>
+                <label for="job">직업</label><br>
+                <select name="job" id="job" class="left">
+                    <option value="">선택</option>
+                    <option value="housewife">주부</option>
+                    <option value="employee">회사원</option>
+                    <option value="student">학생</option>
+                    <option value="others">기타</option>
+                </select>
+            </p>
+            <p>
+                <span>관심사</span><br>
+                <label><input type="checkbox" class="left">연예인</label>
+                <label><input type="checkbox">요리</label>
+                <label><input type="checkbox" checked>다이어트</label>
+                <label><input type="checkbox">게임</label>
+            </p>
+            <p>
+                <label for="imageUp">사진업로드</label><br>
+                <input type="file" id="imageUp" class="left">
+            </p>
+            <p>
+                <br><br>
+                <input type="submit" value="정보저장" style="margin-left: 35px;">
+                <input type="reset" value="다시쓰기" style="margin-left: 20px;">
+            </p>
+        </fieldset>    
+    </form>
+</body>
+</html>
