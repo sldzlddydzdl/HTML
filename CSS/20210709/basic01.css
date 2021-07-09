@@ -1,0 +1,33 @@
+@charset "UTF-8";
+body{
+    background-color: beige;
+}
+/* CSS Document */
+
+#set01{
+    color : red;
+}
+
+#set01+ul{ /*id 가 #set01 인 아이에서 제일이웃인 ul 을 선택하겟다  */
+    background-color: brown;
+}
+
+.drink{
+    color: orange;
+}
+
+ul>.special{
+    background-color: green;
+}
+
+h1~h2{ /* h1 과 같은 형제중에서 h2 를 다 선택해달라 */
+    background-color: blue;
+}
+/* id 선택하기:아이디 set01 -> clor red */
+
+/* class선택하기 : 클래스drink -> color yellow */
+
+/* 다중클래스 선택하기  클래스 special -> color:green */
+
+/* 자식요소 선택하기 아이디 set02의 자식ul -> 배경 pink*/
+
