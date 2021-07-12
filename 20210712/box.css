@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+p{
+    width: 500px;
+    height: 300px;
+    padding: 20px;    
+    background-color: yellow;
+    /* border-width: 10px 10px 10px 10x; */
+    border-width: 10px;
+    border-style: solid;
+    border-color: green;
+   /* box-sizing: content-box; default 값으로 이렇게 들어가잇따. */
+}
+p.box{
+    box-sizing: border-box;
+}
+
+/* 블록요소의 width: auto -> 부모영향  */
+div{
+    background-color: orange;
+
+}
+
+/* inline */
+a{
+    background-color: blue;
+}

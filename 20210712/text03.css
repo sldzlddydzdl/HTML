@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 클래스 tran01  대문자 만들기*/
+.tran01{
+    text-transform: uppercase;
+}
+/* 클래스 tran02  소문자 만들기*/
+.tran02{
+    text-transform: lowercase;
+}
+/* 클래스 tran03  첫글자 대문자 만들기*/
+.tran03{
+    text-transform: capitalize;
+}
+.variant{
+    font-variant: small-caps;
+}
+
+
+/* 클래스 spacing01 자간 3px*/
+.spacing01{
+    letter-spacing: -0.5px;
+}
+/* 클래스 spacing02 단어간격 3px*/
+.spacing02{
+    word-spacing: 3px;
+}
+
+h1{
+    width: 500px;
+    background-color: yellow;
+    font-size: 25px;
+    line-height: 75px;
+    text-align: center;
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 25px;
+}
+
+/* 클래스 space  코딩 모양 그대로 나타내기*/
+.space{
+    white-space: pre;
+}
+/* .space{
+    white-space: nowrap;
+} */
+
+
+
