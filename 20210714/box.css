@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 가로: 500px 세로 300px 만들기 */
+p{
+    width:500px;
+    height: 300px;
+    background-color: orange;
+    padding: 20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: green;
+}
+p.box01{
+    box-sizing: content-box;
+}
+p.box02{
+    box-sizing: border-box;
+}

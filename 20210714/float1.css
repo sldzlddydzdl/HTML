@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+p{width:250px; height:250px;
+	padding:0; margin:0;}
+div{	width:1000px;
+		height:300px;
+		border:10px solid #000;
+		margin-bottom:300px; }
+p.box01{background:red;}		
+p.box02{background:yellow;}	
+p.box03{background:green;}	
+
+div#boxA>.box01{
+	width: 320px;
+	height: 300px;
+	float: left;
+	margin-right: 20px;
+}
+div#boxA>.box02{
+	width: 320px;
+	height: 300px;
+	float: left;
+	margin-right: 20px;
+}
+div#boxA>.box03{
+	width: 320px;
+	height: 300px;
+	float: left;
+}
+
+div#boxB>.box01{float: left;}
+div#boxB>.box02{float: left;}
+div#boxB>.box03{float: left; width: 700px;}
+/* box03 이 내려오는 이유는 영역이 모잘라서 내려오는거다
+전체는 1000인데 box01 box02 합ㅊ서 500이라서 700 이 못들어간다. */
+
+div#boxC>.box01{float: left;}
+div#boxC>.box02{float: right;}
+div#boxC>.box03{float: left;}
+
+div#boxD{height: auto;
+		overflow: hidden; /*부모 요소에 문제가 생기면 overflow : hidden 을 넣어서 자식 요소들을 인식시켜주자*/}
+div#boxD>.box01{float: right;}
+div#boxD>.box02{float: left;}
+div#boxD>.box03{float: right;}
+
+div.position{
+	position: fixed;
+	top: 150px;
+	left: 200px;
+	background-color: aqua;
+}

@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+p{	
+	height: 250px;
+	width:250px;
+}
+
+.box_01 {
+	background-color: #990;
+	margin-bottom: 300px;
+}
+
+.box_02 {
+	background-color: #C00;
+	margin-bottom: 200px;
+}
+
+.box_03 {
+	background-color: #F90;
+	/* margin-top: 100px; */
+	margin : 0 auto 20px;
+	/* margin : auto;   <-- 이렇게 하면 안된다!  */
+}
+
+.box{
+	width: 200px;
+	height: 200px;
+	border: 2px solid #666;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 60px 30px;
+}
