@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+p{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #000;
+    float: left;
+    margin-right: 30px;
+    /* overflow: visible; */
+}
+
+.box_01{
+    overflow: hidden;
+}
+
+.box_02{
+    overflow: scroll;
+}
+
+.box_03{
+    overflow: auto;
+}

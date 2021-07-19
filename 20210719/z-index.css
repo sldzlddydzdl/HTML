@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+p{
+    width: 250px;
+    height: 250px;
+    position: fixed;
+}
+
+.box_01{
+    left: 100px;
+    top: 100px;
+    background-color: red;
+    z-index: 200;
+}
+.box_02{
+    left: 200px;
+    top: 200px;
+    background-color: green;
+    z-index: 100;
+}
+.box_03{
+    left: 300px;
+    top: 300px;
+    background-color: blue;
+    z-index: 400;
+}
+.box_04{
+    left: 400px;
+    top: 400px;
+    background-color: yellow;
+    z-index: 300;
+}

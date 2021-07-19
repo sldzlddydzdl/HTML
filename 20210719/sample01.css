@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* reset */
+body , div, ul , li{
+    margin: 0; padding: 0;
+    font-size: 1em;
+    line-height: 1em;
+}
+ul, li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+/*layout*/
+ul{
+    width: 200px;
+    border: 1px solid #000;
+    border-bottom: none;
+    margin: 30px auto 0;
+}
+ul>li{
+    border-bottom: 1px solid #000;
+    text-align: center;
+}
+ul>li>a{
+    font: bold 20px/80px Arial,sans-serif;
+    color: #000;
+}
+
+ul>li:hover{background-color: yellow;}
+ul>li:hover>a{
+    color: orange;
+}

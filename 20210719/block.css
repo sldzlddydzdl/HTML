@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* reset하기 */
+/* 여백, 크기 , 각각 요소 성격  */
+body, h1, div, p, ul, li{
+    margin: 0; padding: 0;
+    font-size: 1em;
+    line-height: 1em;
+    font-weight: normal;
+}
+em, i{
+    font-style: normal;
+}
+a{text-decoration: none;}
+
+ul,li{
+    list-style-type: none;
+    /* padding-left: 50px; */
+}
+
+/* *{margin: 0; padding: 0;} */
+/*크기 지정하기*/
+h1{
+    background-color: pink;
+    /* padding, border 감지 나머지 부모 요소에 맞추기 */
+    width: auto;
+    height: auto;
+    /* 콘텐츠 */
+    padding: 0  50px;
+}
+
+p.box02{
+    width: 100%;
+    padding: 0 50px;
+    background-color: yellow;
+}
+
+
+/* inline요소 크기 지정 */
+em{
+    background-color: red;
+    
+}
