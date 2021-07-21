@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+/* reset -> 요소의 성격을 제거해줌*/
+
+body, h1, h2, div, header, nav, ul, li{
+    margin: 0; padding: 0;
+    font-size: 1em;
+    line-height: 1em;
+    font-weight: normal;
+}
+ul,li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/*
+1 크기 가장 적게
+width:0; height:0;      font-size:0; line-height:0;
+2.다른 요소 방해 안하게
+position:absolute;      fixed
+3.안보이게
+visibility:hidden; -> 추천
+text-indent: -9999px 
+*/
+
+/* 요소 안보이기 */
+.hideClass{
+    width: 0; height: 0;
+    font-size: 0; line-height: 0;
+    position: absolute;
+    visibility: hidden;
+}
+
+body{
+    background-color: #666;
+}
+div#headerWrap{
+    background-color: #fff;
+}
+/* .header{
+    overflow: auto;
+    margin: 0 auto;
+    padding: auto 50px;
+}
+
+.h1{
+    float: left;
+}
+
+.nav{
+    float: right
+} */
+
+header{
+    width: 1440px;
+    padding: 86px 0 36px;
+    margin: 0 auto;
+    /* background-color: red; */
+    overflow: hidden;
+    /* 자식들 안보이는것좀 보여줘! */
+
+    position: relative;
+}
+header>h1{
+    float: left;
+}
+header>nav{
+    float: right;
+}
+/* 
+.navBar{
+    position: absolute;
+    right: 8px;
+    bottom: 35px;
+}
+
+.mainLink{
+    position: absolute;
+    right: 0;
+    top: 95px;
+    
+    margin-right: 15px;
+}
+
+.navBar>li{
+    float: right;
+    margin-left: 25px;
+}
+
+.mainLink>li{
+    float: right;
+    margin-left: 25px;
+} */
+
+
+nav>.navBar{
+    padding-top: 44px;
+}
+nav>.navBar>li{
+    float: left;
+    margin-left: 64px;
+}
+nav>.navBar>li>a{
+    font: bold 20px '나눔고닉', sans-serif;
+    color: #000;
+}
+nav>.mainLink{
+    position: absolute;
+    top: 64px;
+    right: 44px;
+}
+nav>.mainLink>li{
+    float: left;
+    margin-left: 49px
+}
+nav>.mainLink>li>a{
+    font: 16px '나눔고딕' , sans-serif;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

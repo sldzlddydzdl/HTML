@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ul{
+    clear: left;
+    background-color: rgb(68, 64, 64);
+}
+
+.img01{
+    float: left;
+}
+
+.img02{
+    float: left;
+    margin-left: 30px;
+}
+
+.img03{
+    margin-left: 30px;
+}
+
+.img04{
+    float: left;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.img05{
+    margin-top: 40px;
+}
+
+.img06{
+    float: left;
+    margin-top: 40px;
+}
+
+.img07{
+    float: left;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.img08{
+    float: left;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.img09{
+    /* float: left; */
+    /* margin-top: 40px;
+    margin-left: 30px;
+}
+
+
+ul>li>:hover>img{background-color: yellow;} */ 
+
+/* 갤러리같은걸 젤 작은걸 먼저 */
+
+ .hideClass{
+    width: 0; height: 0;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    visibility: hidden;
+}
+/*
+
+section{
+    width: 960px;
+    padding: 50px 15px 15px;
+    background-color: orange;
+    margin: 0 auto;
+}
+section>ul{
+    width: 960px;
+    overflow: hidden;
+}
+section>ul>li{
+    width: 200px;
+    padding: 10px;
+    margin: 0 10px 20px;
+    background-color: #fff;
+    float: left;
+}
+section>ul>li.best{
+    width: 440px;
+}
+section>ul>li>p{} */
+
+
+section{
+    background-color: orange;
+    width: 960px;
+    padding: 30px 15px 15px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+section>ul{
+    /* width: 960px; */
+    /* background-color: green; */
+    
+}
+
+section>ul>li{
+    /* width: 200px; */
+    width: auto;
+    padding: 10px;
+    margin: 0 10px 20px;
+    background-color: #fff;
+    float: left;
+    position: relative;
+}
+
+section>ul>li.best{
+    /* width: 440px; */
+}
+section>ul>li:hover>p{
+    display: block;
+}
+
+section>ul>li>p{
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%;
+    font: bold 18px/220px Arial, sans-serif ;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    text-align: center;
+    display: none;
+}
+
+section>ul>li.best>p{
+    line-height: 460px;
+}
+section>ul>li.best>span{
+    position: absolute;
+    left: -10px;
+    top: -10px;
+}
+section>ul>li>img{
+    vertical-align: top;
+}
