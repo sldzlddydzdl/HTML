@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+nav#nav01{
+  width:100%;
+  background-color:#3e3e3e;   
+  margin:50px 0;     }
+#nav01>ul{
+  width:800px;
+  margin: 0 auto;
+  /* background-color:red; */
+  /* flex -> flex만들기 -> direction -> wrap */
+  display:flex;
+  /* flex-direction:row;
+  flex-wrap:nowrap;
+  justify-content: flex-start; */
+}
+#nav01>ul>li{
+  flex-grow:1;
+}
+#nav01>ul>li>a{
+  display:block;
+  text-align:center;
+  font:bold 16px/34px Arial,sans-serif;
+  color:#fff;
+}
+/* a:hover-> 배경, color */
+#nav01>ul>li>a:hover{
+  color:#ffbf00;
+  background-color:#787878;
+}
+
+
+#nav02{
+  width:auto;
+  background-color:cyan;}
+#nav02>ul{
+  width:800px;
+  margin:0 auto;
+  background-color:#666;
+  /* container */
+  display:flex;
+  /* flex-direction: row;
+  flex-wrap:nowrap;
+  justify-content: flex-start; */
+}
+#nav02>ul>li{
+  flex-grow: 1;
+  position:relative;
+}
+/* 서브메뉴 */
+/* #nav02>ul>li 에 마우스 올라가면 서브메뉴 ul이 보이기 */
+#nav02>ul>li:hover>ul{
+  display:block;
+}
+#nav02>ul>li>ul{
+  position:absolute;
+  left:0; 
+  top:34px;
+  width:100%;
+  /* background-color:pink; */
+  display:none;
+  padding-top:10px;
+}
+#nav02>ul>li>ul>li{
+  border-bottom:1px solid #fff;}
+#nav02>ul>li>ul>li>a{
+  display:block;
+  text-align:center;
+  font:16px/34px Arial,sans-serif;
+  background-color:#333;
+  color:#fff;
+}
+#nav02>ul>li>ul>li>a:hover{
+  background-color:skyblue;
+  color:yellow;
+}
+#nav02>ul>li>a{
+  display:block;
+  font:bold 16px/34px Arial,sans-serif;
+  color:#fff;
+  text-align:center;
+}
+#nav02>ul>li>a:hover{
+  background-color:green;
+  color:yellow;
+}
