@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* CSS Document */
+div{width:200px; height:200px; padding:25px; border:10px solid #000; margin-bottom:25px;}
+
+
+#box0{
+    background-image: linear-gradient(red 10%, yellow 90%);
+}
+#box1{}
+#box2{}
+#box3{}
+#box4{}
+#box5{}

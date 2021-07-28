@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+div{
+	width:600px; height:600px;
+	border:2px solid #333;
+	background: url('../images/sun.png') no-repeat 336px 33px,
+				url('../images/cloud.png') no-repeat 195px 31px,
+				url('../images/rabbit.png') no-repeat 155px 259px,
+				url('../images/tree.png') no-repeat 303px 264px,
+				skyblue
+}
